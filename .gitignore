@@ -1,0 +1,27 @@
+# =======================================================================
+# PYTHON CACHE & SYSTEM ARTIFACTS (Wipe out messy system logs)
+# =======================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.vscode/
+.idea/
+
+# =======================================================================
+# LOCAL DIAGNOSTICS & DATA ARTIFACTS (Hide local scratchpad logs)
+# =======================================================================
+app_output.txt
+check_imports.py
+
+
+# Hide local test scripts
+tests/
+
+# =======================================================================
+# PIPELINE GENERATION OUTPUTS (Recruiters view these via README images)
+# =======================================================================
+*.xlsx
+*.csv
+
