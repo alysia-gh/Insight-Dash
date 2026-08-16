@@ -41,7 +41,7 @@ When executed, the analytics pipeline parses the parsed dataset, runs automated 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com
-cd YOUR_REPO_NAME
+cd Insight-Dash
 ```
 
 ### 2. Install Dependencies
