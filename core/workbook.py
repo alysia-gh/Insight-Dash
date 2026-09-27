@@ -21,11 +21,13 @@ def generate_output_path():
     )
 
 
-def save_workbook(workbook):
-
-    output_path = generate_output_path()
+def save_workbook(workbook, output_path=None):
+    if output_path is None:
+        output_path = generate_output_path()
+    else:
+        output_dir = os.path.dirname(output_path)
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
 
     workbook.save(output_path)
-
     return output_path
-    workbook.active = 0
